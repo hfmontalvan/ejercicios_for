@@ -70,6 +70,7 @@ h1 span { color: var(--acento); }
 h2 { margin: 0; font-size: 22px; }
 .indicador { padding: 7px 12px; color: #bcecff; background: #183f61; border: 1px solid #37688b; border-radius: 999px; font-size: 12px; }
 .tabla { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+
 .fila {
   display: flex;
   align-items: center;
@@ -84,6 +85,7 @@ h2 { margin: 0; font-size: 22px; }
   transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
   animation: aparecer .5s ease both;
 }
+
 .fila b { color: var(--acento); margin: 0 6px; }
 .fila strong { color: #7dd3fc; font-size: 23px; }
 .fila:hover { transform: translateY(-4px); border-color: var(--acento); box-shadow: 0 12px 24px rgba(0,0,0,.22); }
