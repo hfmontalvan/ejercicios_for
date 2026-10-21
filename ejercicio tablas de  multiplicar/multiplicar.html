@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practica la tabla de multiplicar del 3.">
+  <title>Tablas de Multiplicar | Tabla del 3</title>
+  <!-- Los estilos se mantienen en un archivo independiente. -->
+  <link rel="stylesheet" href="multiplicar.css">
+</head>
+<body>
+  <main class="panel">
+    <!-- Encabezado y botón visual: se programará en una etapa posterior. -->
+    <header class="encabezado">
+      <p class="etiqueta">LABORATORIO DE MATEMÁTICAS</p>
+      <h1>Tablas de <span>Multiplicar</span></h1>
+      <p class="descripcion">Explora la tabla del <strong>3</strong> y descubre sus resultados del 1 al 10.</p>
+      <button class="boton" type="button">PROBAR <span aria-hidden="true">→</span></button>
+      <p class="nota">En esta etapa, el botón es únicamente visual.</p>
+    </header>
+
+    <!-- Contenedor: agrupa los diez ítems que después crearemos con JavaScript. -->
+    <section class="tabla-seccion" aria-labelledby="titulo-tabla">
+      <div class="seccion-cabecera">
+        <h2 id="titulo-tabla">Tabla del 3</h2>
+        <span class="indicador">10 operaciones</span>
+      </div>
+      <div class="tabla">
+        <!-- Cada div.fila es un ítem repetido. -->
+        <div class="fila"><span>3 <b>×</b> 1</span><strong>3</strong></div>
+        <div class="fila"><span>3 <b>×</b> 2</span><strong>6</strong></div>
+        <div class="fila"><span>3 <b>×</b> 3</span><strong>9</strong></div>
+        <div class="fila"><span>3 <b>×</b> 4</span><strong>12</strong></div>
+        <div class="fila"><span>3 <b>×</b> 5</span><strong>15</strong></div>
+        <div class="fila"><span>3 <b>×</b> 6</span><strong>18</strong></div>
+        <div class="fila"><span>3 <b>×</b> 7</span><strong>21</strong></div>
+        <div class="fila"><span>3 <b>×</b> 8</span><strong>24</strong></div>
+        <div class="fila"><span>3 <b>×</b> 9</span><strong>27</strong></div>
+        <div class="fila"><span>3 <b>×</b> 10</span><strong>30</strong></div>
+      </div>
+    </section>
+    <footer class="pie">Desarrollado por HFM | Aprendiendo JavaScript</footer>
+  </main>
+</body>
+</html>
