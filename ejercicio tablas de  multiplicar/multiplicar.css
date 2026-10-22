@@ -160,3 +160,53 @@ h2 { margin: 0; font-size: 22px; }
         max-width: 100%;
     }
 }
+
+/* PARTE 9 - EXPERIENCIA DE USUARIO */
+
+/* Instrucciones */
+.instrucciones {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 18px 22px;
+
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid var(--borde);
+    border-radius: 15px;
+
+    color: var(--texto);
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: left;
+}
+
+/* Texto de ayuda */
+.ayuda {
+    display: block;
+    color: var(--suave);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Mensajes de validación */
+.mensaje {
+    min-height: 20px;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Error */
+.mensaje.error {
+    color: #fca5a5;
+}
+
+/* Éxito */
+.mensaje.exito {
+    color: #86efac;
+}
+
+/* Resaltar entradas incorrectas */
+.grupo-entrada input.input-error {
+    border-color: #f87171;
+}

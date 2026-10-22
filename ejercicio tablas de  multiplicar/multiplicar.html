@@ -20,22 +20,53 @@
       <h1>Tablas de <span>Multiplicar</span></h1>
       <p class="descripcion">Explora la tabla del <strong>3</strong> y descubre sus resultados del 1 al 10.</p>
       
-      <!-- Caja para ingresar el número -->
-      <div class="grupo-entrada">
-
-          <label for="txtNumero">
-              Ingresa el número de la tabla que deseas generar
-          </label>
-
-          <input
-              type="number" id="txtNumero" placeholder="Ejemplo: 8" min="10"
-          >
-
-      </div>
+<!-- INSTRUCCIONES PARA EL USUARIO -->
+<p class="instrucciones">
+    1. Ingresa un número entero positivo.<br>
+    2. Presiona el botón GENERAR TABLA.<br>
+    3. Observa los resultados del 1 al 10.
+</p>
 
 
-      <button class="boton" type="button" onclick="generarTablas();">PROBAR <span aria-hidden="true">→</span></button>
-      
+<!-- CAJA DE TEXTO -->
+<div class="grupo-entrada">
+
+    <label for="txtNumero">
+        ¿Qué tabla de multiplicar deseas practicar?
+    </label>
+
+    <input
+        type="number"
+        id="txtNumero"
+        placeholder="Ejemplo: 8"
+        min="1"
+        step="1"
+        aria-describedby="ayudaNumero mensajeNumero"
+    >
+
+    <small id="ayudaNumero" class="ayuda">
+        Ingresa un número entero mayor que cero.
+    </small>
+
+    <!-- Mensaje de validación -->
+    <p id="mensajeNumero" class="mensaje" role="status"
+       aria-live="polite"></p>
+
+</div>
+
+<!-- BOTÓN -->
+<button class="boton" type="button"
+        onclick="generarTablas();">
+    GENERAR TABLA <span aria-hidden="true">→</span>
+</button>
+
+
+
+
+
+
+
+
       <p class="nota">En esta etapa, el botón es únicamente visual.</p>
     </header>
 
@@ -60,7 +91,7 @@
         <div class="fila"><span>3 <b>×</b> 9</span><strong>27</strong></div>
         <div class="fila"><span>3 <b>×</b> 10</span><strong>30</strong></div>
       </div>
-      
+
     </section>
     <footer class="pie">Desarrollado por HFM | Aprendiendo JavaScript</footer>
   </main>
